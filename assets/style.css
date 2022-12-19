@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Conduit ITC Regular';
+    src: url('ConduitITCRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Halo3';
+    src: url('Halo3.woff2') format('woff2');
+}
+
+* {
+    font-family: 'Conduit ITC Regular', sans-serif;
+    color: #95a6c2;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+.border {
+    border: 1px solid rgba(255,255,255,.1);
+    border-left: 0;
+    border-right: 0;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body, .container {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #161d3a;
+}
+
+.bgVideo {
+    width: 104%;
+    height: 104%;
+
+    display: absolute;
+    top: -60%;
+    left: -2%;
+    filter: blur(2px);
+}
+
+.menuWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 43vh;
+    width: 26vw;
+
+    position: absolute;
+    left: 6%;
+    bottom: 0%;
+    
+    background: rgb(15,26,54);
+    background: linear-gradient(160deg, rgba(15,26,54,.6) 0%, rgba(0,2,11,.9) 100%);
+
+    font-size: 4vh;
+}
+
+.menuItem {
+    display: inline-flex;
+    align-items: center;
+
+    height: 5vh;
+    width: 100%;
+    text-transform: uppercase;
+
+    padding: 0 3%;
+}
+
+.menuItem:last-child {
+    position: absolute;
+    bottom: 10%;
+    
+    text-transform:none;
+}
+
+.menuItem:hover {
+    color: white;
+    background: rgb(166,109,72);
+    background: linear-gradient(90deg, rgba(166,109,72,1) 0%, rgba(166,109,72,.1) 100%);
+
+    border: 2px inset rgba(255, 223, 197, 0.3);
+    border-right-width: 0;
+    border-left-width: 0;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.startButton {
+    width: 5%;
+    height: 5vh;
+    background-image: url('start.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 2% 0 0;
+}
+
+
+.gameLogo {
+    display: flex;
+    
+    position: absolute;
+    right: 6vw;
+    bottom: 25vh;
+
+    font-family: 'Halo3';
+    font-size: 15.5vh;
+
+    background: linear-gradient(0deg, rgba(120,162,200,1) 0%, rgba(199,228,244,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    text-shadow:1px 1px 10px rgba(68, 121, 190, 0.5);
+}
+
+.bungieLogo {
+    position: absolute;
+    height: 19%;
+    width: 10%;
+
+    right: 7%;
+    bottom: 6%;
+
+    background-image: url('bungie.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .8;
+
+}
